@@ -1,206 +1,233 @@
-🌙 NIGHTSHIFT - 100 Features & Technical Overview
-🌌 1. Game Concept & Lore (1-10)
-Atmospheric Horror: A dark, tense, and claustrophobic survival-horror experience.
-
-Threat in the Dark: The main antagonist, the mysterious Shadow Stalker.
-
-Night Shift Theme: A struggle for survival during a dangerous night shift.
-
-Exploration & Tension: High tension created by limited visibility and dynamic audio.
-
-Visual Concept: A creature design made of complex, tendon-like dark fibers.
-
-Dark Environment: An abandoned, eerie, and unsettling 3D facility/setting.
-
-Psychological Pressure: Constant fear of ambush paired with resource management.
-
-Listen & Hide: Locating the creature using sound cues.
-
-Minimalist HUD: Clean interface allowing full immersion in the atmosphere.
-
-Pure Survival: Focus on hiding and timing rather than direct combat.
-
-🎮 2. Gameplay Mechanics (11-30)
-First-Person View (FPS): Immersive camera perspective.
-
-Movement System: Walking, sprinting, and crouching mechanics.
-
-Stamina Management: Realistic fatigue system limiting continuous running.
-
-Stealth Mechanics: Crouching to move quietly and avoid detection.
-
-Interaction System: Interacting with doors, keys, and objects.
-
-Flashlight / Light Source: Battery-powered light source for dark areas.
-
-Battery Drain: Flashlight power decreases over time, requiring new batteries.
-
-Sound Detection: Enemy reacts to footstep noise made by the player.
-
-Hiding Spots: Hiding inside lockers, under desks, or in dark corners.
-
-Head Bobbing: Realistic camera movement while walking and running.
-
-Inventory System: Collecting items and keys required to progress.
-
-Field of View (FOV): Adjustable FOV settings for player comfort.
-
-Objective List: Step-by-step tasks to complete in the facility.
-
-Locked Doors: Keycard and key locking mechanisms.
-
-Danger Indicators: Screen distortion or audio cues when the creature is near.
-
-Realistic Physics: Smooth jump and falling physics.
-
-Dual Interaction: Ability to interact with objects while holding a flashlight.
-
-Anxiety System: Increased heartbeat and screen blur when spotted.
-
-Chasing Thrill: High-speed escape moments in narrow corridors.
-
-Quick Restart: Fast respawn to the last checkpoint upon capture.
-
-🤖 3. Shadow Stalker (Enemy & AI) (31-50)
-Custom Armature Structure: Unique skeleton built from dense dark fibers.
-
-Quadrupedal / Hunched Stance: Menacing and non-humanoid pose.
-
-Extended Limbs: Extremely long arms, legs, and sharp claw bones.
-
-Dynamic AI: Smart navigation using Godot's NavMesh system.
-
-Patrol State: Wandering predefined routes across the map.
-
-Search State: Investigating suspicious sounds created by the player.
-
-Chase State: Accelerating towards the player upon visual contact.
-
-Line of Sight: Detection cone based on creature vision.
-
-Hearing Sense: Sound detection for running or dropped objects.
-
-Glowing Eyes: Two bright white glowing eyes targeting in the dark.
-
-Custom Attack Animations: Unique kill sequence upon catching the player.
-
-Jumpscare Mechanics: Sudden attack triggers to surprise the player.
-
-Animation Blending: Smooth transitions between walking, running, and idle states.
-
-Tendon / Fiber Effects: Web-like shadow textures and materials.
-
-Light Sensitivity: Flashlight causing momentary stuns or retreats.
-
-Spatial Audio Cues: Growls and footsteps heard behind walls.
-
-Quick Maneuvers: Fast turns in narrow spaces due to long limbs.
-
-Unpredictable AI: Randomized decision-making to prevent pattern memorization.
-
-Obstacle Avoidance: Navigating around tables and walls smoothly.
-
-High Lethality: One-hit capture system for intense stakes.
-
-🛠️ 4. Engine & Technical Setup (Godot 4 & Blender) (51-70)
-Godot Engine 4: Built on modern game engine architecture.
-
-GDScript Language: Clean, fast, and optimized codebase.
-
-CharacterBody3D: Physics-based 3D character controller.
-
-Blender 3.6 LTS: 3D modeling and rigging pipeline.
-
-Manual Rigging: Handcrafted Armature and Bone structure for the creature.
-
-GLTF / GLB Export: High-compatibility model pipeline into Godot.
-
-CollisionShape3D: Precise collision bounds and physics shapes.
-
-Skeleton3D & Attachments: Bone-based attachment points in Godot.
-
-Volumetric Lighting: Realistic fog and light beams breaking the dark.
-
-Dynamic Shadow Mapping: Real-time dynamic shadows.
-
-WorldEnvironment Node: Custom fog, darkness, and tonemapping setups.
-
-3D Spatial Audio: Environmental 3D audio via AudioStreamPlayer3D.
-
-VoxelGI / SDFGI: Modern global illumination techniques in Godot 4.
-
-Inverse Kinematics (IK): Limb adaptation for smooth floor placement.
-
-Modular Scene Architecture: Clean separation of scripts and scenes.
-
-Performance Optimization: Efficient low-poly models for performance.
-
-Custom Shaders: Specialized visual shaders for shadow effects.
-
-Signal-Driven Architecture: Event-driven GDScript design pattern.
-
-Clean Scene Tree: Organized node hierarchy for easy maintenance.
-
-Cross-Platform Readiness: Optimized for Windows PC performance.
-
-🎨 5. Visuals, Audio & Atmosphere (71-85)
-Cinematic Color Palette: Dark greys, deep blacks, and cool blue tones.
-
-High Contrast: Deep shadows paired with sharp light sources.
-
-Dark Textures: Metallic, rusty, and wet surface materials.
-
-Dense Fog Effect: Atmospheric fog reducing maximum visibility.
-
-Ambient Audio: Eerie background drones and wind soundscapes.
-
-Surface-Based Footsteps: Distinct footstep sounds for wood, metal, and concrete.
-
-Creature Audio Library: Custom growls, shrieks, and heavy footsteps.
-
-Flickering Lights: Broken hallway lighting adding unpredictability.
-
-Post-Processing: Subtle bloom, chromatic aberration, and film grain.
-
-Particle Systems: Dust particles floating in light shafts.
-
-Horror-Themed UI: Dark, minimalistic interface design.
-
-Dynamic Music Intensity: Music escalates as the creature draws near.
-
-Surface Reflections: Realistic light reflections on wet floors.
-
-Focal Lighting: Strategic light placement to guide the player.
-
-Silhouettes: Spine-chilling creature silhouettes in dark corridors.
-
-🚀 6. Project Roadmap & Future Plans (86-100)
-Open Source Development: Modular code available for community review.
-
-Version Control: Organized GitHub repository with regular commits.
-
-Advanced AI Upgrades: Enhanced searching logic for hidden players.
-
-New Map Sections: Additional floors and outdoor areas.
-
-Interactive Puzzles: Repairing power grids to open doors.
-
-Environmental Lore: Notes, audio logs, and diaries scattered around.
-
-New Entity Types: Additional shadow variants in future updates.
-
-Audio Settings: Independent volume controls for FX and music.
-
-Graphics Settings: Quality toggles and FPS limiters.
-
-In-Game Achievements: Rewards for surviving under difficult conditions.
-
-Gamepad Support: Full controller support planned.
-
-Localization: Multi-language support (English, Turkish, Dutch).
-
-Key Binding: Custom control mapping system.
-
-Community Feedback: Game balance adjustments based on playtests.
-
-Indie Passion Project: A unique horror project built with dedication.
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Night Shift</title>
+  <style>
+    :root {
+      --bg: #0a0a12;
+      --panel: #121826;
+      --panel2: #1b2333;
+      --text: #f3f4f6;
+      --muted: #cbd5e1;
+      --accent: #ffca5f;
+      --accent2: #7dd3fc;
+      --border: #2e3a4f;
+      --green: #1fa76a;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(rgba(10,10,18,0.7), rgba(10,10,18,0.9)),
+        radial-gradient(circle at top, rgba(125,211,252,0.15), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    .hero {
+      padding: 32px 0 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      letter-spacing: 1px;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 760px;
+    }
+
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #111827;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.6fr 0.8fr;
+      gap: 26px;
+    }
+
+    .panel {
+      background: rgba(18, 24, 38, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    .panel h2 {
+      margin-top: 0;
+      font-size: 1.7rem;
+      color: var(--accent2);
+    }
+
+    p {
+      font-size: 1.04rem;
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .feature-list li {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+      color: var(--text);
+    }
+
+    .side-box {
+      display: grid;
+      gap: 18px;
+    }
+
+    .meta-card {
+      background: rgba(18, 24, 38, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .meta-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .meta-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: var(--muted);
+    }
+
+    .meta-card li {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Night Shift</h1>
+      <div class="subtitle">
+        Gece vardiyası, karanlık koridorlar, kaybolan işaretler ve hayatta kalma mücadelesi...
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="#">Demo Oyna</a>
+        <a class="btn secondary" href="#">Tam Sürüm</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>Hikâye</h2>
+        <p>
+          Night Shift, terk edilmiş bir iş yerinde çalışan bir kişinin gece vardiyasında
+          her şeyin kontrol dışına çıktığı bir korku deneyimidir. Karanlık koridorlar,
+          kapalı odalar, sessizlik ve bilinmeyen sesler, oyuncunun kalbine korku salarken
+          aynı zamanda gerilim ve keşif duygusunu da güçlendirir. Oyun, yalnızlığın ve
+          umutsuzluğun pekiştiği bir atmosferde ilerler ve her kapı, her ışık, her ses
+          yeni bir gizem doğurur. Karakter, sadece hayatta kalmak için değil, aynı zamanda
+          geride bıraktığı gerçeği anlamak için de mücadele eder.
+        </p>
+        <p>
+          Her bölümde yeni bir ipucu, her köşede bir tehdit ve her adımda derinleşen
+          bir gerilim vardır. Oyuncu, sınırlı kaynaklarla ilerler, ortamı dikkatlice
+          inceler ve hayatta kalmayı kabullendiği anda gerçek tehlike başlar. Night Shift,
+          basit ama etkili mekaniklerle sürükleyici, atmosferik ve zihin yorucu bir
+          deneyim sunar.
+        </p>
+        <ul class="feature-list">
+          <li>✔ Gerilim dolu atmosfer ve sessiz, karanlık ortam tasarımı</li>
+          <li>✔ Keşif, gizem ve hayatta kalma odaklı oynanış</li>
+          <li>✔ Kısa ama etkili hikâye anlatımı ve sürükleyici sahneler</li>
+          <li>✔ Düşünceli kaynak yönetimi ve korku dolu kararlar</li>
+        </ul>
+      </section>
+
+      <aside class="side-box">
+        <div class="meta-card">
+          <h3>Detaylar</h3>
+          <ul>
+            <li>Tür: Korku / Gerilim</li>
+            <li>Mod: Tek kişilik</li>
+            <li>Platform: Web / PC</li>
+            <li>Durum: Demo</li>
+          </ul>
+        </div>
+
+        <div class="meta-card">
+          <h3>Özellikler</h3>
+          <ul>
+            <li>Atmosferik ses tasarımı</li>
+            <li>Gizemli arka plan</li>
+            <li>Yavaş, gerilim dolu tempo</li>
+            <li>Hayatta kalma odaklı ilerleyiş</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
